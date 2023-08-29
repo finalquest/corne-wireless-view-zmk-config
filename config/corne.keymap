@@ -11,11 +11,13 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
     };
+
     macros {
         screenshot: screenshot {
             compatible = "zmk,behavior-macro";
@@ -59,7 +61,7 @@
          &kp TAB       &kp N1          &kp N2        &kp N3     &kp N4             &kp N5     &kp N6        &kp N7        &kp N8        &kp N9   &kp EQUAL         &kp BSPC
 &kp LEFT_CONTROL     &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &kp C_VOLUME_UP    &kp DOT        &kp N4        &kp N5  &kp NUMBER_6    &kp PIPE           &trans
        &kp LSHFT  &screenshot          &trans        &trans     &trans  &kp C_VOLUME_DOWN    &kp DOT  &kp NUMBER_1  &kp NUMBER_2        &kp N3  &kp KP_DOT  &kp RIGHT_SHIFT
-                                                   &kp LALT     &trans          &kp SPACE     &trans  &kp NUMBER_0         &mo 2
+                                                   &kp LALT     &trans          &kp SPACE     &trans      &lt 2 N0         &mo 2
             >;
         };
 
